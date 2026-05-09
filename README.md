@@ -49,13 +49,10 @@ python evaluation/make_plots.py \
     --out results/plots/
 ```
 
-## Methodology
-
-See [`docs/methodology.md`](docs/methodology.md) for the full write-up.
 
 ## Results
 
-See [`docs/findings.md`](docs/findings.md) and [`results/plots/`](results/plots/).
+See [`results/plots/`](results/plots/).
 
 ## Limitations
 
