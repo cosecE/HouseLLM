@@ -48,6 +48,11 @@ python evaluation/make_plots.py \
     --results results/results_full.json \
     --out results/plots/
 ```
+## To run the ui.py
+
+```bash
+streamlit run ui.py
+```
 
 
 ## Results
