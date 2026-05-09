@@ -3,15 +3,15 @@
 A systematic comparison of four constraint levels for medical dialogue → JSON
 extraction using Llama-3.2-3B-Instruct. We find that schema enforcement is a
 free win, but ICD-10 vocabulary constraint *cratered* diagnosis F1 from 0.46
-(medium) to 0.015 (hard) — what we call **semantic substitution**.
+(medium) to 0.015 (hard), what we call **semantic substitution**.
 
 ## Key findings
 
-- Schema validity: 3% (baseline) → 100% (medium) — schema enforcement works.
+- Schema validity: 3% (baseline) → 100% (medium); schema enforcement works.
 - Mean F1 across list fields: peaks at medium (0.32), drops to 0.10 at hard.
-- Diagnosis F1: 0.46 → 0.015 at hard — the hard condition substitutes
+- Diagnosis F1: 0.46 → 0.015 at hard, the hard condition substitutes
   vocabulary-valid but semantically wrong codes.
-- Hallucination rate: lowest at hard (0.05) — but at the cost of F1.
+- Hallucination rate: lowest at hard (0.05), but at the cost of F1.
 - Constraint enforces vocabulary and schema, but cannot enforce *which entity
   belongs in which field* (the "Dragon" finding).
 
@@ -66,7 +66,9 @@ See [`docs/findings.md`](docs/findings.md) and [`results/plots/`](results/plots/
 
 ## Authors
 
-[your team]
+[Team xyz]
+
+Alisa Zheng, Kaushiki Singh, Sneha Jaikumar
 
 ## License
 
