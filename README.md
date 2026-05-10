@@ -51,6 +51,7 @@ python evaluation/make_plots.py \
 
 ## Summary of How the Files Connect
 
+```
 train.csv
     ↓
 labeler.py  (GPT-4o + annotation_guide + few_shot_examples)
@@ -69,6 +70,7 @@ run_inference.py  (4 conditions)
                                             ↓
                                     results_full.json → make_plots.py
 
+```
 
 ## For more information about the code:
 
