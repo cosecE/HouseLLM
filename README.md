@@ -72,7 +72,7 @@ run_inference.py  (4 conditions)
 
 ## For more information about the code:
 
-See Documentation.pdf
+See [`Documentation.pdf`](Documentation.pdf)
 
 ## To visualize the constraints on UI, run ui.py
 
