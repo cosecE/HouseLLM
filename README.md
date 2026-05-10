@@ -48,7 +48,33 @@ python evaluation/make_plots.py \
     --results results/results_full.json \
     --out results/plots/
 ```
-## To run the ui.py
+
+## Summary of How the Files Connect
+
+train.csv
+    ↓
+labeler.py  (GPT-4o + annotation_guide + few_shot_examples)
+    ↓
+labels_clean.jsonl  ←── spot_check.py (quality validation)
+    ↓
+run_inference.py  (4 conditions)
+    ├── LlamaRunner [baseline]   → predictions_baseline.jsonl
+    ├── LlamaRunner [soft]       → predictions_soft.jsonl
+    ├── LlamaRunner [medium]     → predictions_medium.jsonl  (schema-constrained)
+    └── LlamaRunner [hard]       → predictions_hard.jsonl   (schema + ICD-10 constrained)
+                                            ↓
+                                    evaluator.py
+                                    ├── deterministic metrics (all records)
+                                    └── LLM judge (valid records only)
+                                            ↓
+                                    results_full.json → make_plots.py
+
+
+## For more information about the code:
+
+See Documentation.pdf
+
+## To visualize the constraints on UI, run ui.py
 
 ```bash
 streamlit run ui.py
