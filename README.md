@@ -82,6 +82,8 @@ See document: [`CodeOverview.pdf`](CodeOverview.pdf)
 streamlit run ui.py
 ```
 
+or https://housellm.streamlit.app/
+
 
 ## Results
 
