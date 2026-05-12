@@ -100,6 +100,9 @@ See [`results/plots/`](results/plots/).
 
 Alisa Zheng, Kaushiki Singh, Sneha Jaikumar
 
-## License
+## Individual Code Contributions
+- Sneha: Implemented the medium and hard constraint pipeline using lm-format-enforcer, including JSON schema enforcement and ICD-10 vocabulary integration for diagnosis and history fields, and debugged constraint library compatibility issues (Outlines → lm-format-enforcer migration)
 
-MIT — see [LICENSE](LICENSE).
+= Kaushiki: Built the end to end evaluation framework including deterministic metrics (set-level F1, validity rate, hallucination rate) and generated visualizations for cross-condition comparison
+
+- Alisa: Implemented the baseline and soft inference conditions, developed and ran smoke tests across all four conditions, debugged constraint library compatibility issues (Outlines → lm-format-enforcer migration), and validated pipeline outputs
