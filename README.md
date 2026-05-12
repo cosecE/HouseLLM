@@ -86,6 +86,8 @@ streamlit run ui.py
 
 or https://housellm.streamlit.app/
 
+Paste any of the patient codes (eg: D2N028) or dialogues from the dataset to view the report.
+
 
 ## Results
 
