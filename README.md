@@ -79,6 +79,8 @@ See document: [`CodeOverview.pdf`](CodeOverview.pdf)
 ## To visualize the constraints on UI, run ui.py
 
 ```bash
+cd/ui
+pip install streamlit
 streamlit run ui.py
 ```
 
