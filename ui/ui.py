@@ -4,11 +4,11 @@ import csv
 import os
 import difflib
 
-_HERE = os.path.dirname(os.path.abspath(__file__))
+_HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 _TRAIN_CSV       = os.path.join(_HERE, "data", "train.csv")
 _LABELS_PATH     = os.path.join(_HERE, "labeler", "labels_clean.jsonl")
 _PREDICTIONS_DIR = os.path.join(_HERE, "results", "predictions")
-_RESULTS_FULL    = os.path.join(_HERE, "evaluation", "results_full.json")
+_RESULTS_FULL    = os.path.join(_HERE, "results", "results_full.json")
 
 CONDITIONS = ["baseline", "soft", "medium", "hard"]
 CONDITION_MAP = {
